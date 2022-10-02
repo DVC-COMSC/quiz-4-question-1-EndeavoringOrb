@@ -15,5 +15,5 @@ for i in range(9):
     else:
         chain = 0
 
-print("-----------------")
+#print("-----------------")
 print(adjacent)
