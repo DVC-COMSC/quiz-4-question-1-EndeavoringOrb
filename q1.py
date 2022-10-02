@@ -3,13 +3,17 @@
 # ******************************
 
 adjacent=0
-num = int(input())
+num_arr=[]
+
+
+for i in range(10):
+    num_arr.append(int(input()))
+
 
 for i in range(9):
-    t_num = int(input())
-    if num%2 == 0 and t_num%2 == 0:
-        adjacent += 1
-    num = t_num
+    if num_arr[i]%2==0 and num_arr[i+1]%2==0:
+        adjacent += 1
+
 
 print(adjacent)
 
