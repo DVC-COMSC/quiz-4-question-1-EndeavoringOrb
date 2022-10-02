@@ -4,13 +4,14 @@
 # ******************************
 
 adjacent=0
-num = int(input("Enter number "+str(1)+ ": "))
+num_arr=[]
+
+for i in range(10):
+    num_arr.append(int(input("Enter number "+str(i+1)+ ": ")))
 
 for i in range(9):
-    t_num = int(input("Enter number "+str(i+2)+ ": "))
-    if num%2 == 0 and t_num%2 == 0:
+    if num_arr[i]%2==0 and num_arr[i+1]%2==0:
         adjacent += 1
-    num = t_num
 
 print(adjacent)
 
